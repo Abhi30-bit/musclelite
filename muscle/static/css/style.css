@@ -1,0 +1,172 @@
+/* Theme Colors */
+:root {
+    --primary: #EA2F14;
+    --secondary: #E6521F;
+    --accent: #FB9E3A;
+    --light: #FCEF91;
+    --dark: #1c1c1c;
+    --white: #fff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* Navbar */
+.navbar {
+    background: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-left: 1px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Carousel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+.slides img {
+    width:100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* Animated Text */
+.animated-text {
+    text-align: center;
+    padding: 2rem;
+    background: var(--accent);
+    color: var(--white);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Schedule Cards */
+.schedule-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(245, 203, 15, 0.1);
+}
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 600px;
+    margin: 3rem auto;
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--accent);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    background: var(--secondary);
+}
+.row{
+    
+    text-align: center;
+}
+.mob{
+    right: margin 100px;
+}

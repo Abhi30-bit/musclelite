@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MuscleLites</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{%static 'css/style2.css' %}"/>
+    <script src="{%static 'js/bootstrap.bundle.js' %}"></script>
+</head>
+<body>
+    <div class="container-fluid ">
+   {% include 'header.html' %}
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="slides">
+            <img src="{% static 'images/slide1.jpg' %}" alt="Slide 1">
+            <img src="{% static 'images/slide2.jpg' %}" alt="Slide 2">
+            <img src="{% static 'images/slide3.jpg' %}" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Animated Text -->
+    <section class="animated-text">
+        <h1>Push Yourself Because No One Else Will!</h1>
+    </section>
+
+    <!-- Gym Schedule Cards -->
+    <section class="schedule-cards">
+        <div class="card">
+            <h3>Monday</h3>
+            <p>Chest + Triceps</p>
+        </div>
+        <div class="card">
+            <h3>Tuesday</h3>
+            <p>Back + Biceps</p>
+        </div>
+        <div class="card">
+            <h3>Wednesday</h3>
+            <p>Legs + Core</p>
+        </div>
+        <div class="card">
+            <h3>Thursday</h3>
+            <p>Shoulders + Abs</p>
+        </div>
+        <!-- Add more days if needed -->
+    </section>
+
+
+    
+        <!--navs start 
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="navbar bg-body-tertiary">
+              <div class="container">
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="images/logo.9cfdd9e4.svg"
+                    alt="vadilala"
+                    height="50"
+                  />
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        Navbar End-->
+        <!-- card section start  -->
+        <div class="row mt-5 px-4">
+          <div class="col-sm-3">
+                <div class="mycard position-relative">
+                <div class="pt-3 ps-3">
+                 <button class="btn btn-dark rounded-pill">NEW</button>
+                </div>
+                <div>
+                <img src="/static/images/sr1.png" alt="" class="img-fluid" />
+                </div>
+                <div class="position-absolute bottom-0 ps-3 pb-3">
+                <h4>MASS REFORM</h4>
+                <h5>GAINER</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+              <div class="mycard position-relative">
+                  <div class="pt-3 ps-3">
+                   <button class="btn btn-dark rounded-pill">NEW</button>
+                  </div>
+                  <div>
+                  <img src="/static/images/sr1.png" alt="" class="img-fluid" />
+                  </div>
+                  <div class="position-absolute bottom-0 ps-3 pb-3">
+                  <h4>MASS REFORM</h4>
+                  <h5>GAINER</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-3">
+  
+              <div class="mycard position-relative">
+                  <div class="pt-3 ps-3">
+                   <button class="btn btn-dark rounded-pill">NEW</button>
+                  </div>
+                  <div>
+                  <img src="/static/images/sr1.png" alt="" class="img-fluid" />
+                  </div>
+                  <div class="position-absolute bottom-0 ps-3 pb-3">
+                  <h4>MASS REFORM</h4>
+                  <h5>GAINER</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-3">
+              <div class="mycard position-relative">
+                  <div class="pt-3 ps-3">
+                   <button class="btn btn-dark rounded-pill">NEW</button>
+                  </div>
+                  <div>
+                  <img src="/static/images/sr1.png" alt="" class="img-fluid" />
+                  </div>
+                  <div class="position-absolute bottom-0 ps-3 pb-3 ">
+                  <h4>MASS REFORM</h4>
+                  <h5>GAINER</h5>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- card section end -->
+      
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MuscleLites. All rights reserved.</p>
+    </footer>
+</div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
