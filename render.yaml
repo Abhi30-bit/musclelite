@@ -3,9 +3,9 @@ services:
     name: musclelite
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn musclelites.muscle.muscle.wsgi:application
+    startCommand: gunicorn musclelites.wsgi:application
     envVars:
       - key: PYTHON_VERSION
         value: 3.10
       - key: DJANGO_SETTINGS_MODULE
-        value: musclelites.muscle.muscle.settings
+        value: musclelites.settings
